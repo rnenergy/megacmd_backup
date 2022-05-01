@@ -13,14 +13,14 @@ if str1=$(grep "\"Ubuntu 22.04 LTS\""* /etc/os-release)
     elif str2=$(grep "\"Debian GNU/Linux 10 (buster)\""* /etc/os-release)
     then
         #Depend
-        apt install libc-ares2 libpcrecpp0v5 python3-distutils python3-setuptools python3-wheel python-pip-whl python3-dev 
+        apt install -y libc-ares2 libpcrecpp0v5 python3-distutils python3-setuptools python3-wheel python-pip-whl python3-dev 
         apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
         apt install -y libssl-dev libffi-dev libncurses5-dev zlib1g zlib1g-dev libreadline-dev libbz2-dev libsqlite3-dev make gcc
         dpkg -i ./megacmd-Debian_10.0_amd64.deb
     elif str3=$(grep "\"Debian GNU/Linux 11 (bullseye)\""* /etc/os-release)
     then
         #Depend
-        apt install libc-ares2 libpcrecpp0v5 python3-distutils python3-setuptools python3-wheel python-pip-whl python3-dev 
+        apt install -y libc-ares2 libpcrecpp0v5 python3-distutils python3-setuptools python3-wheel python-pip-whl python3-dev 
         apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
         apt install -y libssl-dev libffi-dev libncurses5-dev zlib1g zlib1g-dev libreadline-dev libbz2-dev libsqlite3-dev make gcc
         dpkg -i ./megacmd-Debian_11_amd64.deb
