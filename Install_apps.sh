@@ -70,9 +70,6 @@ until [ "$whoi" = "Account e-mail: $login" ]
     mega-backup $local_path $remote_path --period="$time_int" --num-backups=$num_b
 
     echo "${blue}${white}Everything is OK!!!${clear}"
-    else
-        echo "${blue}${white}Wrong password or login! Try to run script again!${clear}"
-fi
 
 #SET UP Monitoring via Telegra_Bot
 echo "${blue}${white}Now you need to configure backup checking.${clear}"
