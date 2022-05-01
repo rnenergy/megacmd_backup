@@ -1,7 +1,7 @@
 Installation:
 The better way is to run all scripts as root user (default user in Proxmox VE is root).
 #Install Git
-apt install git
+apt install git -y
 #Clone git repository mega_backup
 git clone https://github.com/rnenergy/megacmd_backup.git
 #cd to megacmd_backup folder
