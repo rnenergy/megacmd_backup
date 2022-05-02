@@ -86,7 +86,7 @@ read ba_time
 echo "${blue}${white}Specify Approx size of backup file (+1m12k3B - means no less then 1Mb12Kb3byte)${clear}"
 read ba_size
 
-cat << EOF >> comm_vars.txt
+cat << EOF >> /root/megacmd_backup/comm_vars.txt
 export b_folder="$ba_folder"
 export b_time="$ba_time"
 export b_size="$ba_size"
