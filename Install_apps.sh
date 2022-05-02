@@ -93,7 +93,7 @@ export b_size="$ba_size"
 EOF
 
 #CRON JOB SETUP
-echo "${blue}${white}Add to the end of file the CRON Like format period e.g. < 0 12 * * * ./check_backups.sh means run script at 12 oclock every day. ARE YOU READY??? (type 'y' or 'n')${clear}"
+echo "${blue}${white}Add to the end of file the CRON Like format period e.g. < 0 12 * * * /root/megacmd_backup/check_backups.sh (copy this path) means run script at 12 oclock every day. ARE YOU READY??? (type 'y' or 'n')${clear}"
 read answer
 if [ $answer = y ]
     then
