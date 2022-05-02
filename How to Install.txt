@@ -1,3 +1,6 @@
+At first you need to prepare:
+1. Mega.io account (email and password)
+2. Telegram bot and it's token
 Installation:
 The better way is to run all scripts as root user (default user in Proxmox VE is root).
 #Install Git
