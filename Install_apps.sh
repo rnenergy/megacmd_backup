@@ -52,6 +52,8 @@ until [ "$whoi" = "Account e-mail: $login" ]
     mega-login $login $password
     whoi=$(mega-whoami)
     done
+    stty erase '^?'
+    stty sane
     echo "Done!"
 #Backupconf
     echo "${blue}${white}Now you need to configure backup.${clear}"
