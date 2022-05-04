@@ -55,7 +55,7 @@ until [ "$whoi" = "Account e-mail: $login" ]
     echo "Done!"
 #Backupconf
     echo "${blue}${white}Now you need to configure backup.${clear}"
-    echo "${blue}Make sure you know path to dump. Check in Proxmox GUI (default is /var/lib/vz/dump)${clear}"
+    echo "${blue}${white}Make sure you know path to dump. Check in Proxmox GUI (default is /var/lib/vz/dump)${clear}"
     read local_path
     echo "${blue}${white}Define remote path in Mega.io cloud (/your_path)${clear}"
     read remote_path 
