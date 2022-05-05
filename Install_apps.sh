@@ -81,7 +81,7 @@ echo "${blue}${white}Now you need to configure backup checking.${clear}"
 #read ba_folder
 
 #Time interval to check if backups exists
-echo "${blue}${white}Specify Time Interval to check if backups exists (cron type or -/+1m12d3h - means is there any backups were made duaring  1Month 12Days 3Hours)${clear}"
+echo "${blue}${white}Specify Time Interval to check if backups exists (-12h+1h - checks files uploaded in the last 12 hours prior to the last hour)${clear}"
 read ba_time
 
 #Approx size of backup file
