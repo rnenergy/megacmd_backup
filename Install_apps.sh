@@ -56,7 +56,7 @@ until [ "$whoi" = "Account e-mail: $login" ]
 #backup folder creation
 backup_folder=$(mega-mkdir -p /PROXMOX-backups/$HOSTNAME-backup)
 remote_path=/PROXMOX-backups/$HOSTNAME-backup
-echo "$remote_path"
+
 #Backupconf
     echo "${blue}${white}Now you need to configure backup.${clear}"
     echo "${blue}${white}Make sure you know path to dump. Check in Proxmox GUI (default is /var/lib/vz/dump)${clear}"
